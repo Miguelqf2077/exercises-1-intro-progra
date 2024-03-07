@@ -6,17 +6,17 @@ using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
-  
+     
      string minStr;
    
-     if (str1 <= str2 && str1 <= str3) {
-        minStr = str1;
-    } else if (str2 <= str1 && str2 <= str3) {
-        minStr = str2;
+     if (s1 <= s2 && str1 <= s3) {
+        minStr = s1;
+    } else if (s2 <= s1 && s2 <= s3) {
+        minStr = s2;
     } else {
-        minStr = str3;
+        minStr = s3;
     }
-    
+    cout << minStr << endl;
     
 }
 
