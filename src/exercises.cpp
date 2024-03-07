@@ -7,9 +7,10 @@ using namespace std;
 void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
      
+     cin >> s1 >> s2 >> s3;
      string minStr;
    
-     if (s1 <= s2 && str1 <= s3) {
+     if (s1 <= s2 && s1 <= s3) {
         minStr = s1;
     } else if (s2 <= s1 && s2 <= s3) {
         minStr = s2;
