@@ -7,17 +7,18 @@ using namespace std;
 void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
      
-     cin>> s1 >> s2 >> s3; 
-     string minStr;
+     s1="milk";
+     s2="milkshake";
+     s3="month";
    
      if (s1 <= s2 && s1 <= s3) {
-        minStr = s1;
+         cout << s1;
     } else if (s2 <= s1 && s2 <= s3) {
-        minStr = s2;
+         cout << s2;
     } else {
-        minStr = s3;
+        cout << s3;
     }
-    cout << minStr << endl;
+   
     
 }
 
