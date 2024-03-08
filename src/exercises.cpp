@@ -7,10 +7,10 @@ using namespace std;
 void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
      
-     string s1, s2,s3;
-     s1="milk";
-     s2="milkshake";
-     s3="month";
+     
+     s1= "milk ";
+     s2= "milkshake ";
+     s3= " month ";
    
      if (s1 <= s2 && s1 <= s3) {
          cout << s1;
