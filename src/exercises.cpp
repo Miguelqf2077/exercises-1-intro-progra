@@ -26,7 +26,23 @@ void exercise_2(double A, double B, double C) {
     A;
     B;
     C;
+    double  X1,X2;
+
+    double x = (B*B) - (4*A*C);
     
+    if(x<=0)
+    {
+        x=x*(-1);
+        cout<<"solucion en numeros complejos"<<endl;
+        cout<<"Solución en numeros complejos: " <<(-B/(2*A))<<" + "<<(sqrt(x)/(2*A))<<"i y "<<(-B/(2*A))<<" - "<<(sqrt(x)/(2*A))<<"i"<<endl;
+        
+        X1 = (-B + sqrt(x)) / (2*A);
+        X2 = (-B - sqrt(x)) / (2*A);
+        
+        cout<<"X1 = "<<X1<<endl;
+        cout<<"X2 = "<<X2<<endl; 
+    }
+
 }
 
 void exercise_3(int a, int b) {
