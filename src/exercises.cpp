@@ -24,13 +24,13 @@ void exercise_1(string s1, string s2, string s3) {
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
     A,B,C;
-    double A, c;
-    cin >> A >> c;
+    double A, C;
+    cin >> A >> C;
 
-    if (c == 0) {
+    if (C== 0) {
         cout << "Imposible" << endl;
     } else {
-        cout << A / c << endl;
+        cout << A / C << endl;
     }
     
 }
