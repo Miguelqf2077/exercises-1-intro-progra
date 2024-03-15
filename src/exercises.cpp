@@ -34,10 +34,10 @@ void exercise_3(int a, int b) {
       a;
       b;
       
-      if (B== 0) {
+      if (b== 0) {
         cout << "Imposible" << endl;
     } else {
-        cout << A / B << endl;
+        cout << a / b << endl;
     }
 }
 
