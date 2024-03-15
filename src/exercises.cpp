@@ -24,7 +24,6 @@ void exercise_1(string s1, string s2, string s3) {
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
     A,B,C;
-    double A, C;
     cin >> A >> C;
 
     if (C== 0) {
