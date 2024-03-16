@@ -27,32 +27,32 @@ void exercise_2(double A, double B, double C) {
     B;
     C;
     
-    if (A == 0)
-    {
-        double x = -C / B;
-        cout << "Unico valor para X: " << x << endl;
-        return;
-    }
-    double divisor, raiz;
-    int x1, x2;
-
-    if (B * B - 4 * A * C < 0)
-    {
-        divisor = 2 * A;
-        raiz = pow(-1 * (B * B - 4 * A * C), 0.5);
-        x1 = (-B + raiz) / divisor;
-        x2 = (-B - raiz) / divisor;
-        cout << "Valor para X1: " << x1 << " i" << endl;
-        cout << "Valor para X2: " << x2 << " i" << endl;
-    }
-    else
-    {
-        divisor = 2 * A;
-        raiz = pow(B * B - 4 * A * C, 0.5);
-        x1 = (-B + raiz) / divisor;
-        x2 = (-B - raiz) / divisor;
-        cout << "Valor para X1: " << x1 << endl;
-        cout << "Valor para X2: " << x2 << endl;
+    if (A == 0) {
+    if (B == 0) {
+    if (C == 0) {
+                cout << "La ecuacion tiene infinitas soluciones." << endl;
+            } else {
+                cout << "La ecuacion no tiene solución." << endl;
+            }
+        } else {
+            double x = -C / B;
+            cout << "Unica solucion para X: " << x << endl;
+        }
+    } else {
+        double discriminante = B * B - 4 * A * C;
+        if (discriminante < 0) {
+            double parte_real = -B / (2 * A);
+            double parte_imaginaria = sqrt(-discriminante) / (2 * A);
+            cout << "Soluciones imaginarias:" << endl;
+            cout << "X1 = " << parte_real << " + " << parte_imaginaria << "i" << endl;
+            cout << "X2 = " << parte_real << " - " << parte_imaginaria << "i" << endl;
+        } else {
+            double x1 = (-B + sqrt(discriminante)) / (2 * A);
+            double x2 = (-B - sqrt(discriminante)) / (2 * A);
+            cout << "Soluciones reales:" << endl;
+            cout << "X1 = " << x1 << endl;
+            cout << "X2 = " << x2 << endl;
+        }
     }
     
 }
