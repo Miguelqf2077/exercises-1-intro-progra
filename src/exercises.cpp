@@ -26,22 +26,35 @@ void exercise_2(double A, double B, double C) {
     A;
     B;
     C;
-
-    double x = B * B- 4 * A * C;
     
-    if (x > 0) {
-        double x1 = (-B + sqrt(x)) / (2 * A);
-        double x2 = (-B - sqrt(x)) / (2 * A);
-        cout << "Las raices son: " << x1 << " y " << x2 << endl;
-    } else if (x== 0) {
-        double x = -B / (2 * A);
-        cout << "La raiz doble es: " << x << endl;
-    } else {
-        double x1 = -B / (2 * A);
-        double x2 = sqrt(-x) / (2 * A);
-        cout << "Las raices son numeros complejos: " << x1 << " + " << x2 << "i y "<< x1 << " - " << x2 << "i" << endl; 
+    if (A == 0)
+    {
+        double x = -C / B;
+        cout << "Unico valor para X: " << x << endl;
+        return;
     }
+    double divisor, raiz;
+    int x1, x2;
 
+    if (B * B - 4 * A * C < 0)
+    {
+        divisor = 2 * A;
+        raiz = pow(-1 * (b * b - 4 * a * c), 0.5);
+        x1 = (-B + raiz) / divisor;
+        x2 = (-B - raiz) / divisor;
+        cout << "Valor para X1: " << x1 << " i" << endl;
+        cout << "Valor para X2: " << x2 << " i" << endl;
+    }
+    else
+    {
+        divisor = 2 * A;
+        raiz = pow(B * B - 4 * A * C, 0.5);
+        x1 = (-B + raiz) / divisor;
+        x2 = (-B - raiz) / divisor;
+        cout << "Valor para X1: " << x1 << endl;
+        cout << "Valor para X2: " << x2 << endl;
+    }
+    
 }
 
 void exercise_3(int a, int b) {
