@@ -26,17 +26,6 @@ void exercise_2(double A, double B, double C) {
     A;
     B;
     C;
-    {
-    cout << "Ingresa el valor de X^2" << endl;
-    cin >> A;
-    cout << "Ingresa el valor de X" << endl;
-    cin >> B;
-    cout << "Ingresa el valor de la constante" << endl;
-    cin >> C;
-    cuadratica(A, B, C);
-    return 0;
-}
-void cuadratica(double A, double B, double C)
 {
     if (A == 0)
     {
