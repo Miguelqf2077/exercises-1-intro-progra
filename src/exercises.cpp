@@ -23,31 +23,27 @@ void exercise_1(string s1, string s2, string s3) {
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
-  {
-    A;
-    B;
-    C;
-    float  X1,X2;
-    float x;
-    
-     x= (B*B) - (4*A*C);
-    
-    if(x<=0)
-    {
-        x=x*(-1);
-        cout<<"solucion en numeros complejos"<<endl;
-        cout<<"Solución en numeros complejos: " <<(-B/(2*A))<<" + "<<(sqrt(x)/(2*A))<<"i y "<<(-B/(2*A))<<" - "<<(sqrt(x)/(2*A))<<"i"<<endl;
+    A,B,C;
 
-        }else{
+     float x1, x2;
+     float x;
+
+     x = (B*B) - (4*A*C);
+     if (x <= 0){
+        x = x*(-1);
+        cout<<"Solución solo en números complejos"<<endl;
+        cout<<"Solución en numeros complejos: " <<(-B/(2*A))<<" + "<<(sqrt(x)/(2*A))<<"i y "<<(-B/(2*A))<<" - "<<(sqrt(x)/(2*A))<<"i"<<endl;
+    }else{
+      
+        x1 = (-B + sqrt(x)) / (2*A);
+        x2 = (-B - sqrt(x)) / (2*A);
         
-        X1 = (-B + sqrt(x)) / (2*A);
-        X2 = (-B - sqrt(x)) / (2*A);
-        
-        cout<<"X1 = "<<X1<<endl;
-        cout<<"X2 = "<<X2<<endl; 
+        cout<<"x1 = "<<x1<<endl;
+        cout<<"x2 = "<<x2<<endl;
     }
 
-}
+
+  
 
 
 }
@@ -56,7 +52,6 @@ void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
       a;
       b;
-      cin >> a >> b;
       if (b== 0) {
         cout << "Imposible" << endl;
     } else {
