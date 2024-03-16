@@ -23,13 +23,10 @@ void exercise_1(string s1, string s2, string s3) {
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
-    A;
-    B;
-    C;
-{
-    if (A == 0)
+   {
+    if (a == 0)
     {
-        double x = -C / B;
+        double x = -c / b;
         cout << "Unico valor para X: " << x << endl;
         return;
     }
@@ -37,25 +34,26 @@ void exercise_2(double A, double B, double C) {
     int x1, x2;
     // pow(BASE, EXPONENTE)
 
-    if (B * B - 4 * A * C < 0) // raiz(b * b - 4 * a * c )
+    if (b * b - 4 * a * c < 0) // raiz(b * b - 4 * a * c )
     {
-        divisor = 2 * A;
-        raiz = pow(-1 * (B * B - 4 * A * C), 0.5);
-        x1 = (-B + raiz) / divisor;
-        x2 = (-B - raiz) / divisor;
+        divisor = 2 * a;
+        raiz = pow(-1 * (b * b - 4 * a * c), 0.5);
+        x1 = (-b + raiz) / divisor;
+        x2 = (-b - raiz) / divisor;
         cout << "Valor para X1: " << x1 << " i" << endl;
         cout << "Valor para X2: " << x2 << " i" << endl;
     }
     else
     {
-        divisor = 2 * A;
-        raiz = pow(B * B - 4 * A * C, 0.5);
-        x1 = (-B + raiz) / divisor;
-        x2 = (-B - raiz) / divisor;
+        divisor = 2 * a;
+        raiz = pow(b * b - 4 * a * c, 0.5);
+        x1 = (-b + raiz) / divisor;
+        x2 = (-b - raiz) / divisor;
         cout << "Valor para X1: " << x1 << endl;
         cout << "Valor para X2: " << x2 << endl;
     }
-    }
+}
+
 }
 
 void exercise_3(int a, int b) {
