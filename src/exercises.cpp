@@ -28,8 +28,9 @@ void exercise_2(double A, double B, double C) {
     B;
     C;
     float  X1,X2;
-
-    float x = (B*B) - (4*A*C);
+    float x;
+    
+     x= (B*B) - (4*A*C);
     
     if(x<=0)
     {
