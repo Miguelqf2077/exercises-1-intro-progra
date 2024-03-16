@@ -27,21 +27,20 @@ void exercise_2(double A, double B, double C) {
     B;
     C;
     {
-    double a, b, c;
     cout << "Ingresa el valor de X^2" << endl;
-    cin >> a;
+    cin >> A;
     cout << "Ingresa el valor de X" << endl;
-    cin >> b;
+    cin >> B;
     cout << "Ingresa el valor de la constante" << endl;
-    cin >> c;
-    cuadratica(a, b, c);
+    cin >> C;
+    cuadratica(A, B, C);
     return 0;
 }
-void cuadratica(double a, double b, double c)
+void cuadratica(double A, double B, double C)
 {
-    if (a == 0)
+    if (A == 0)
     {
-        double x = -c / b;
+        double x = -C / B;
         cout << "Unico valor para X: " << x << endl;
         return;
     }
@@ -49,21 +48,21 @@ void cuadratica(double a, double b, double c)
     int x1, x2;
     // pow(BASE, EXPONENTE)
 
-    if (b * b - 4 * a * c < 0) // raiz(b * b - 4 * a * c )
+    if (B * B - 4 * A * C < 0) // raiz(b * b - 4 * a * c )
     {
-        divisor = 2 * a;
-        raiz = pow(-1 * (b * b - 4 * a * c), 0.5);
-        x1 = (-b + raiz) / divisor;
-        x2 = (-b - raiz) / divisor;
+        divisor = 2 * A;
+        raiz = pow(-1 * (B * B - 4 * A * C), 0.5);
+        x1 = (-B + raiz) / divisor;
+        x2 = (-B - raiz) / divisor;
         cout << "Valor para X1: " << x1 << " i" << endl;
         cout << "Valor para X2: " << x2 << " i" << endl;
     }
     else
     {
-        divisor = 2 * a;
-        raiz = pow(b * b - 4 * a * c, 0.5);
-        x1 = (-b + raiz) / divisor;
-        x2 = (-b - raiz) / divisor;
+        divisor = 2 * A;
+        raiz = pow(B * B - 4 * A * C, 0.5);
+        x1 = (-B + raiz) / divisor;
+        x2 = (-B - raiz) / divisor;
         cout << "Valor para X1: " << x1 << endl;
         cout << "Valor para X2: " << x2 << endl;
     }
