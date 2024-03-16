@@ -24,13 +24,7 @@ void exercise_1(string s1, string s2, string s3) {
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
    {
-    double A, B, C;
-    cout << "Ingresa el valor de X^2" << endl;
-    cin >> A;
-    cout << "Ingresa el valor de X" << endl;
-    cin >> B;
-    cout << "Ingresa el valor de la constante" << endl;
-    cin >> C;
+     A, B, C;
     cuadratica(A, B, C);
     return 0;
 }
