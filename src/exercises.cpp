@@ -34,7 +34,7 @@ void exercise_2(double A, double B, double C) {
     cuadratica(A, B, C);
     return 0;
 }
-void cuadratica(double A, double B, double C)
+
 {
     if (A == 0)
     {
