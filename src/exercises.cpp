@@ -28,22 +28,22 @@ void exercise_2(double A, double B, double C) {
      double x1, x2;
      double x;
 
-     x = b * b - 4 * a * c;
+     x = B * B - 4 * A * C;
      if (x > 0) {
 
-        double x1 = (-b + sqrt(x)) / (2 * a);
-        double x2 = (-b - sqrt(x)) / (2 * a);
+        double x1 = (-B + sqrt(x)) / (2 * A);
+        double x2 = (-B - sqrt(x)) / (2 * A);
         cout << "Las raíces son: " << x1 << " y " << x2 << endl;
 
     } else if (x== 0) {
 
-        double x = -b / (2 * a);
+        double x = -B / (2 * A);
         cout << "La raíz doble es: " << x << endl;
 
     } else {
-      
-        double x1 = -b / (2 * a);
-        double x2 = sqrt(-x) / (2 * a);
+
+        double x1 = -B / (2 *A);
+        double x2 = sqrt(-x) / (2 * A);
         cout << "Las raíces son números complejos: " << x1 << " + " << x2 << "i y " 
              << x1 << " - " << x2 << "i" << endl;
     }
