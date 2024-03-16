@@ -25,26 +25,28 @@ void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
     A,B,C;
 
-     float x1, x2;
-     float x;
+     double x1, x2;
+     double x;
 
-     x = (B*B) - (4*A*C);
-     if (x <= 0){
-        x = x*(-1);
-        cout<<"Solución solo en números complejos"<<endl;
-        cout<<"Solución en numeros complejos: " <<(-B/(2*A))<<" + "<<(sqrt(x)/(2*A))<<"i y "<<(-B/(2*A))<<" - "<<(sqrt(x)/(2*A))<<"i"<<endl;
-    }else{
+     x = b * b - 4 * a * c;
+     if (x > 0) {
+
+        double x1 = (-b + sqrt(x)) / (2 * a);
+        double x2 = (-b - sqrt(x)) / (2 * a);
+        cout << "Las raíces son: " << x1 << " y " << x2 << endl;
+
+    } else if (x== 0) {
+
+        double x = -b / (2 * a);
+        cout << "La raíz doble es: " << x << endl;
+
+    } else {
       
-        x1 = (-B + sqrt(x)) / (2*A);
-        x2 = (-B - sqrt(x)) / (2*A);
-        
-        cout<<"x1 = "<<x1<<endl;
-        cout<<"x2 = "<<x2<<endl;
+        double x1 = -b / (2 * a);
+        double x2 = sqrt(-x) / (2 * a);
+        cout << "Las raíces son números complejos: " << x1 << " + " << x2 << "i y " 
+             << x1 << " - " << x2 << "i" << endl;
     }
-
-
-  
-
 
 }
 
