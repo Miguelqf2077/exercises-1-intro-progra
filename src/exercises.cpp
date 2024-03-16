@@ -31,7 +31,7 @@ void exercise_2(double A, double B, double C) {
     {
         double x = -C / B;
         cout << "Unico valor para X: " << x << endl;
-        
+        return;
     }
     double divisor, raiz;
     int x1, x2;
