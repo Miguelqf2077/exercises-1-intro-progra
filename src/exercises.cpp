@@ -26,35 +26,48 @@ void exercise_2(double A, double B, double C) {
     A;
     B;
     C;
-    
-    if (A == 0) {
-    if (B == 0) {
-    if (C == 0) {
-                cout << "La ecuacion tiene infinitas soluciones." << endl;
-            } else {
-                cout << "La ecuacion no tiene solución." << endl;
-            }
-        } else {
-            double x = -C / B;
-            cout << "Unica solucion para X: " << x << endl;
-        }
-    } else {
-        double discriminante = B * B - 4 * A * C;
-        if (discriminante < 0) {
-            double parte_real = -B / (2 * A);
-            double parte_imaginaria = sqrt(-discriminante) / (2 * A);
-            cout << "Soluciones imaginarias:" << endl;
-            cout << "X1 = " << parte_real << " + " << parte_imaginaria << "i" << endl;
-            cout << "X2 = " << parte_real << " - " << parte_imaginaria << "i" << endl;
-        } else {
-            double x1 = (-B + sqrt(discriminante)) / (2 * A);
-            double x2 = (-B - sqrt(discriminante)) / (2 * A);
-            cout << "Soluciones reales:" << endl;
-            cout << "X1 = " << x1 << endl;
-            cout << "X2 = " << x2 << endl;
-        }
+    {
+    double a, b, c;
+    cout << "Ingresa el valor de X^2" << endl;
+    cin >> a;
+    cout << "Ingresa el valor de X" << endl;
+    cin >> b;
+    cout << "Ingresa el valor de la constante" << endl;
+    cin >> c;
+    cuadratica(a, b, c);
+    return 0;
+}
+void cuadratica(double a, double b, double c)
+{
+    if (a == 0)
+    {
+        double x = -c / b;
+        cout << "Unico valor para X: " << x << endl;
+        return;
     }
-    
+    double divisor, raiz;
+    int x1, x2;
+    // pow(BASE, EXPONENTE)
+
+    if (b * b - 4 * a * c < 0) // raiz(b * b - 4 * a * c )
+    {
+        divisor = 2 * a;
+        raiz = pow(-1 * (b * b - 4 * a * c), 0.5);
+        x1 = (-b + raiz) / divisor;
+        x2 = (-b - raiz) / divisor;
+        cout << "Valor para X1: " << x1 << " i" << endl;
+        cout << "Valor para X2: " << x2 << " i" << endl;
+    }
+    else
+    {
+        divisor = 2 * a;
+        raiz = pow(b * b - 4 * a * c, 0.5);
+        x1 = (-b + raiz) / divisor;
+        x2 = (-b - raiz) / divisor;
+        cout << "Valor para X1: " << x1 << endl;
+        cout << "Valor para X2: " << x2 << endl;
+    }
+    }
 }
 
 void exercise_3(int a, int b) {
