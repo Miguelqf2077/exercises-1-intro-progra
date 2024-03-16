@@ -44,7 +44,6 @@ void cuadratica(double A, double B, double C)
     }
     double divisor, raiz;
     int x1, x2;
-    
 
     if (B * B - 4 * A * C < 0)
     {
