@@ -23,7 +23,9 @@ void exercise_1(string s1, string s2, string s3) {
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
-    A,B,C;
+    A;
+    B;
+    C;
 
      double x1, x2;
      double x;
@@ -33,13 +35,8 @@ void exercise_2(double A, double B, double C) {
 
         double x1 = (-B + sqrt(x)) / (2 * A);
         double x2 = (-B - sqrt(x)) / (2 * A);
-        
-
     } else if (x== 0) {
-
         double x = -B / (2 * A);
-        
-
     } else {
 
         double x1 = -B / (2 *A);
