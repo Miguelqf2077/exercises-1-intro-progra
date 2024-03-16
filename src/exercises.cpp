@@ -13,13 +13,13 @@ void exercise_1(string s1, string s2, string s3) {
     s3;
   
      if (s1 < s2 && s1 < s3) {
-         cout << s1;
+         cout <<s1;
     } else if (s2 < s1 && s2 < s3) {
          cout << s2;
     } else {
         cout << s3;
     }
-}
+}    
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
@@ -27,21 +27,20 @@ void exercise_2(double A, double B, double C) {
     B;
     C;
 
-     double x1, x2;
-     double x;
-
-     x = B * B - 4 * A * C;
-     if (x > 0) {
-
-        double x1 = (-B + sqrt(x)) / (2 * A);
-        double x2 = (-B - sqrt(x)) / (2 * A);
+    double x = b * b - 4 * a * c;
+    
+    if (x > 0) {
+        double x1 = (-b + sqrt(x)) / (2 * a);
+        double x2 = (-b - sqrt(x)) / (2 * a);
+        cout << "Las raíces son: " << x1 << " y " << x2 << endl;
     } else if (x== 0) {
-        double x = -B / (2 * A);
+        double x = -b / (2 * a);
+        cout << "La raíz doble es: " << x << endl;
     } else {
-
-        double x1 = -B / (2 *A);
-        double x2 = sqrt(-x) / (2 * A);
-       
+        double x1 = -b / (2 * a);
+        double x2 = sqrt(-x) / (2 * a);
+        cout << "Las raíces son números complejos: " << x1 << " + " << x2 << "i y " 
+             << x1 << " - " << x2 << "i" << endl;
     }
 
 }
