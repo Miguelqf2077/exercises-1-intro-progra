@@ -32,15 +32,14 @@ void exercise_2(double A, double B, double C) {
     if (x > 0) {
         double x1 = (-B + sqrt(x)) / (2 * A);
         double x2 = (-B - sqrt(x)) / (2 * A);
-        cout << "Las raíces son: " << x1 << " y " << x2 << endl;
+        cout << "Las raices son: " << x1 << " y " << x2 << endl;
     } else if (x== 0) {
         double x = -B / (2 * A);
-        cout << "La raíz doble es: " << x << endl;
+        cout << "La raiz doble es: " << x << endl;
     } else {
         double x1 = -B / (2 * A);
         double x2 = sqrt(-x) / (2 * A);
-        cout << "Las raíces son números complejos: " << x1 << " + " << x2 << "i y " 
-             << x1 << " - " << x2 << "i" << endl;
+        cout << "Las raices son numeros complejos: " << x1 << " + " << x2 << "i y "<< x1 << " - " << x2 << "i" << endl; 
     }
 
 }
@@ -58,6 +57,9 @@ void exercise_3(int a, int b) {
 
 void exercise_4(double n, double a, double b, double x, double y) {
   // TODO: YOUR CODE HERE
+
+
+  
 }
 
 void exercise_5(char character) {
