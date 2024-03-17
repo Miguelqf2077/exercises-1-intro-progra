@@ -23,10 +23,9 @@ void exercise_1(string s1, string s2, string s3) {
 
 void exercise_2(double a, double b, double c) {
   // TODO: YOUR CODE HERE
-
-   if (a == 0 && b != 0)
+  if (a == 0 && b != 0)
     {
-        double x = -c / B;
+        double x = -c / b;
         cout << x << endl;
         return;
     }
