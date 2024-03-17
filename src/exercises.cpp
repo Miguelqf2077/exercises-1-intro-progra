@@ -21,31 +21,28 @@ void exercise_1(string s1, string s2, string s3) {
     }
 }    
 
-void exercise_2(double A, double B, double C) {
+void exercise_2(double a, double b, double c) {
   // TODO: YOUR CODE HERE
-  A;
-  B;
-  C;
 
-   if (A == 0 && B != 0)
+   if (a == 0 && b != 0)
     {
-        double x = -C / B;
+        double x = -c / B;
         cout << x << endl;
         return;
     }
     double divisor, raiz;
     double x1, x2;
 
-    if (B * B - 4 * A * C < 0 || (A == 0 && B == 0))
+    if (b * b - 4 * a * c < 0 || (a == 0 && b == 0))
     {
         cout << ""  ;
     }
     else
     {
-        divisor = 2 * A;
-        raiz = pow(B * B - 4 * A * C, 0.5);
-        x1 = (-B + raiz) / divisor;
-        x2 = (-B - raiz) / divisor;
+        divisor = 2 * a;
+        raiz = pow(b * b - 4 * a * c, 0.5);
+        x1 = (-b + raiz) / divisor;
+        x2 = (-b - raiz) / divisor;
         if (x1 == x2)
         {
             cout << x1 << endl;
