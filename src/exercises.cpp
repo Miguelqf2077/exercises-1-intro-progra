@@ -56,8 +56,6 @@ void exercise_2(double a, double b, double c) {
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
-      a;
-      b;
       if (b== 0) {
         cout << "Imposible" << endl;
     } else {
@@ -73,16 +71,16 @@ void exercise_4(double n, double a, double b, double x, double y) {
     if (n > b) {
         n -= n * (y / 100.0);
     }
-    cout << "El costo de compra del producto con descuento es: " << N << endl;
+    cout << " " << N << endl;
 }
 void exercise_5(char character) {
   // TODO: YOUR CODE HERE
   if (character >= 'A' && character <= 'Z') {
-        cout << "El caracter ingresado es una letra mayuscula." << endl;
+        cout << "" << endl;
     } else if (character >= 'a' && character <= 'z') {
-        cout << "El caracter ingresado es una letra minuscula." << endl;
+        cout << "" << endl;
     } else {
-        cout << "El caracter ingresado no es una letra." << endl;
+        cout << "" << endl;
     }
 }
 
