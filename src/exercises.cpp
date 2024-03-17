@@ -38,7 +38,7 @@ void exercise_2(double A, double B, double C) {
     }
     else
     {
-        divisor = 2 * a;
+        divisor = 2 * A;
         raiz = pow(B * B - 4 * A * C, 0.5);
         x1 = (-B + raiz) / divisor;
         x2 = (-B - raiz) / divisor;
